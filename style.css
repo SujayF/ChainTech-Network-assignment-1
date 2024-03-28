@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{   
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    align-items: center;
+    border-bottom: 1px solid rgba(31, 31, 31, 1);
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+
+ul{
+    margin-right: 5rem;
+    list-style: none;
+    display: flex;
+}
+
+li{
+    padding-right: 50px;
+    font-weight: 600;
+}
+
+li:first-child {
+    font-weight: bold;
+    color: rgba(0, 255, 167, 1);
+  }
+  
+
+.logo {
+    width: 165px;
+    height: 48.5px;
+    margin-left: 15rem;
+  }
+
+
+  .hero{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+  }
+
+ h1{
+   font-weight: 900;
+   font-size: 120px;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   line-height: 1;
+  }
+
+  .gradient-text{
+    background-image: linear-gradient(to right, #FFFF00, #00FFA7 );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  }
+
+  
+  #btn{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    width: 12rem;
+    height: 60px;
+    justify-content: space-between;
+  }
+
+  #btn:hover{
+    cursor: pointer;
+  }
+  
+  #arw{
+    height: 31.17px;
+    width: 31.17px;
+    border-radius: 50px;
+  }
+  
+  .headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 30px;
+  }
+
+  main{
+      padding-left:50px ;
+      padding-right: 50px;
+  }
+ 
+  /* .cards{
+    width: 80vw;
+    padding-right: 150px;
+    padding-left: 250px;
+    background-color: white;
+    color: black;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+
+   h3{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 40px;
+   }
+
+  #arw_btn{
+      background-color: white;
+      border-radius: 50%;
+      padding: 5px;
+      border: 1px solid transparent;
+  }
+  #arw_btn:hover{
+    border-color: black;
+    cursor: pointer;
+  }
+  
+  .grid_view{
+    padding: 30px;
+  }
+
+  /* .cards_view{
+    height: 402px;
+    width: 293px;
+    background-color: #00FFA7;
+    border-radius: 20px;
+    border: 3px solid;
+  } */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid > div {
+    font-size: 30px;
+   padding-top: .2em;
+   padding-bottom: .2em;
+    color: #ffffff;
+    background: #00FFA7; 
+    border-radius: 20px; 
+    border: 3px solid black; 
+     height: 402px;
+     width: calc(91% - 10px);
+    text-align: center;
+    grid-gap: 5px;
+  }
+  
+   
+  .title{
+
+    color: black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    height: 2rem;
+    border-bottom: 3px solid black;
+  }
+
+  .mid{
+    padding-top: 50px;
+    color: black;
+   line-height: 1;
+  } 
+
+
+
+
+
+
+
+
+
+footer{
+    height: 266px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #98A6AC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    flex-direction: column;
+}
+
+hr{
+    color: #5E5E5E;
+    width: 50vw;
+}
+ 
+footer img {
+    padding-bottom: 20px;
+}
+
+footer hr {
+    margin: 20px 0;
+}
+
+footer p {
+    padding: 30px; 
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1023px) {
+    body {
+        padding: 15px;
+    }
+    .logo {
+        width: 150px; 
+        height: 44px; 
+        margin-left: 5rem;
+      }     
+      
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    .cards{
+        flex-direction: column;
+    }  
+}
+
+@media only screen and (max-width: 833px) {
+    .logo {
+        width: 100px; 
+        height: 29.5px; 
+        margin-left: 2rem; 
+      }
+     
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .cards{
+        flex-direction: column;
+    }  
+}    
