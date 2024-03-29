@@ -30,6 +30,8 @@ li:first-child {
     font-weight: bold;
     color: rgba(0, 255, 167, 1);
   }
+
+
   
 
 .logo {
@@ -103,8 +105,8 @@ li:first-child {
   }
 
   main{
-      padding-left:50px ;
-      padding-right: 50px;
+      padding-left:200px ;
+      padding-right: 200px;
   }
  
   /* .cards{
@@ -141,18 +143,11 @@ li:first-child {
     padding: 30px;
   }
 
-  /* .cards_view{
-    height: 402px;
-    width: 293px;
-    background-color: #00FFA7;
-    border-radius: 20px;
-    border: 3px solid;
-  } */
-
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
   }
   
   .grid > div {
@@ -160,7 +155,7 @@ li:first-child {
    padding-top: .2em;
    padding-bottom: .2em;
     color: #ffffff;
-    background: #00FFA7; 
+    background: #00ffa66d; 
     border-radius: 20px; 
     border: 3px solid black; 
      height: 402px;
@@ -171,7 +166,6 @@ li:first-child {
   
    
   .title{
-
     color: black;
     display: flex;
     justify-content:center;
@@ -186,10 +180,55 @@ li:first-child {
     padding-top: 50px;
     color: black;
    line-height: 1;
+   height: 16rem;
   } 
 
 
 
+  .low{
+    border-top: 3px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+    padding-right: 10px;
+  }
+  
+  
+ #explr{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  background-color: white;
+  border: none;
+  width: 115px;
+  border: 3px solid black;
+ }
+
+ #explr:hover{
+  cursor: pointer;
+ }
+
+ 
+ .grid > div:nth-child(2),div:nth-child(6){
+  background-color: #00eeff68;
+ }
+ 
+ .grid > div:nth-child(3),div:nth-child(7){
+  background-color: #fc595968;
+ } 
+
+ .grid > div:nth-child(4),div:nth-child(8){
+  background-color: #2d46e63d;
+ }
+
+ 
+  .grid> div{
+    width: fit-content;
+ }
+  
 
 
 
@@ -207,6 +246,7 @@ footer{
     background-color: black;
     padding: 20px;
     flex-direction: column;
+    width: auto;
 }
 
 hr{
@@ -259,7 +299,14 @@ footer p {
         height: 29.5px; 
         margin-left: 2rem; 
       }
-     
+      h1{
+        font-size: 50px;
+      }
+       
+      main{
+        padding: 0;
+      }
+
       .grid {
         grid-template-columns: repeat(1, 1fr);
       }
@@ -267,4 +314,29 @@ footer p {
       .cards{
         flex-direction: column;
     }  
+    .headings{
+      text-align: center;
+    }
+}    
+   
+
+@media only screen and (max-width: 375px) { 
+
+  main{
+    padding: 0;
+  }
+  h1{
+    font-size: 50px;
+  }
+  p{
+    font-size: small;
+    text-align: center;
+  }
+  footer{
+    width: auto;
+  }
+  .headings{
+    text-align: center;
+  }
+  
 }    
